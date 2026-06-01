@@ -6,8 +6,36 @@ import { CardData } from "@/interfaces/platform-description.interface";
  * contact information, and other static data.
  */
 
-export const FALLBACK_IMAGE =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop";
+export const images = {
+  hero: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop",
+  heroFallback:
+    "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop",
+  gallery: {
+    building:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+    road: "https://images.unsplash.com/photo-1581094794329-cd0e5ad2b48d?q=80&w=800&auto=format&fit=crop",
+    residential:
+      "https://images.unsplash.com/photo-1600585154343-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+    commercial:
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop",
+    industrial:
+      "https://images.unsplash.com/photo-1504917595218-6f1f8e0a7c5d?q=80&w=800&auto=format&fit=crop",
+    public:
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=800&auto=format&fit=crop",
+  },
+  cards: {
+    residential:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c77445e?q=80&w=800&auto=format&fit=crop",
+    commercial:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+    industrial:
+      "https://images.unsplash.com/photo-1581091226825-a8a7c9f3f4c0?q=80&w=800&auto=format&fit=crop",
+    publicWorks:
+      "https://images.unsplash.com/photo-1531835551805-16d864c8d311?q=80&w=800&auto=format&fit=crop",
+  },
+} as const;
+
+export const FALLBACK_IMAGE = images.heroFallback;
 
 const constants = {
   appName: "BKT Construction",
@@ -18,25 +46,25 @@ const constants = {
       label: "Nous construisons",
       title: "Résidentiel",
       href: "/realisations",
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c77445e?q=80&w=800&auto=format&fit=crop",
+      src: images.cards.residential,
     },
     {
       label: "Nous construisons",
       title: "Commercial",
       href: "/realisations",
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+      src: images.cards.commercial,
     },
     {
       label: "Nous construisons",
       title: "Industriel",
       href: "/realisations",
-      src: "https://images.unsplash.com/photo-1581091226825-a8a7c9f3f4c0?q=80&w=800&auto=format&fit=crop",
+      src: images.cards.industrial,
     },
     {
       label: "Nous construisons",
       title: "Travaux Publics",
       href: "/realisations",
-      src: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?q=80&w=800&auto=format&fit=crop",
+      src: images.cards.publicWorks,
     },
   ] as CardData[],
 

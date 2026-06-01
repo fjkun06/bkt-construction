@@ -5,35 +5,36 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import ImageCarousel from "@/components/ImageCarousel";
+import { images } from "@/utils/constants";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.building,
     alt: "Chantier de construction avec grue",
     caption: "Construction de bâtiments",
   },
   {
-    src: "https://images.unsplash.com/photo-1581094794329-cd0e5ad2b48d?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.road,
     alt: "Route en construction",
     caption: "Travaux publics et infrastructures",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154343-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.residential,
     alt: "Villa résidentielle moderne",
     caption: "Projets résidentiels",
   },
   {
-    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.commercial,
     alt: "Immeuble commercial",
     caption: "Construction commerciale",
   },
   {
-    src: "https://images.unsplash.com/photo-1504917595218-6f1f8e0a7c5d?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.industrial,
     alt: "Usine industrielle",
     caption: "Construction industrielle",
   },
   {
-    src: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=800&auto=format&fit=crop",
+    src: images.gallery.public,
     alt: "École et bâtiment public",
     caption: "Bâtiments publics",
   },
