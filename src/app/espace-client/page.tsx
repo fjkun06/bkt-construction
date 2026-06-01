@@ -8,7 +8,7 @@ export default function EspaceClient() {
       <SectionWrapper className="flex min-h-[60vh] items-center justify-center py-16">
         <div className="flex w-full max-w-md flex-col items-center gap-6 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <div className="text-center">
-            <h1 className="text-primary text-2xl font-bold dark:text-white">
+            <h1 className="text-primary text-[40px] font-bold dark:text-white">
               Espace Client
             </h1>
             <p className="mt-2 text-sm text-gray-600 dark:text-slate-400">

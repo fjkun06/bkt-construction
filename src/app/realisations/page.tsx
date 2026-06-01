@@ -6,7 +6,7 @@ export default function Realisations() {
       <SectionWrapper className="py-16">
         <div className="flex flex-col items-center gap-8">
           <div className="text-center">
-            <h1 className="text-primary text-3xl font-bold sm:text-4xl dark:text-white">
+            <h1 className="text-primary text-[40px] font-bold dark:text-white">
               Nos Réalisations
             </h1>
             <p className="mt-3 max-w-2xl text-base text-gray-600 dark:text-slate-400">
@@ -30,7 +30,7 @@ export default function Realisations() {
 
           {/* Placeholder for photo gallery */}
           <div className="w-full">
-            <h2 className="text-primary mb-6 text-xl font-semibold dark:text-white">
+            <h2 className="text-primary mb-6 text-[40px] font-semibold dark:text-white">
               Galerie Photos
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

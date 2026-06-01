@@ -1,12 +1,44 @@
+import { CardData } from "@/interfaces/platform-description.interface";
+
 /**
  * Application-wide constants for BKT Construction.
  * Contains navigation items, service categories, construction packs,
  * contact information, and other static data.
  */
 
+export const FALLBACK_IMAGE =
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop";
+
 const constants = {
   appName: "BKT Construction",
   tagline: "Entreprise de Bâtiment et Travaux Publics",
+
+  cards: [
+    {
+      label: "Nous construisons",
+      title: "Résidentiel",
+      href: "/realisations",
+      src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop",
+    },
+    {
+      label: "Nous construisons",
+      title: "Commercial",
+      href: "/realisations",
+      src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    },
+    {
+      label: "Nous construisons",
+      title: "Industriel",
+      href: "/realisations",
+      src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=800&auto=format&fit=crop",
+    },
+    {
+      label: "Nous construisons",
+      title: "Travaux Publics",
+      href: "/realisations",
+      src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+    },
+  ] as CardData[],
 
   navItems: [
     { name: "Accueil", href: "/" },

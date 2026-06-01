@@ -15,7 +15,7 @@ export default function Signup() {
       <SectionWrapper className="flex min-h-[60vh] items-center justify-center py-16">
         <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <div className="mb-6 text-center">
-            <h1 className="text-primary text-2xl font-bold dark:text-white">
+            <h1 className="text-primary text-[40px] font-bold dark:text-white">
               Créer un compte
             </h1>
             <p className="mt-2 text-sm text-gray-600 dark:text-slate-400">
