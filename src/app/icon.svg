@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="96" fill="#1e569f"/>
+  <!-- Building structure -->
+  <rect x="160" y="200" width="72" height="176" rx="4" fill="white"/>
+  <rect x="280" y="140" width="72" height="236" rx="4" fill="white"/>
+  <!-- Crane arm -->
+  <rect x="296" y="96" width="8" height="52" rx="2" fill="white"/>
+  <rect x="220" y="96" width="104" height="8" rx="2" fill="white"/>
+  <rect x="220" y="96" width="8" height="32" rx="1" fill="white" opacity="0.8"/>
+  <!-- Windows left building -->
+  <rect x="176" y="220" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="200" y="220" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="176" y="248" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="200" y="248" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="176" y="276" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="200" y="276" width="18" height="18" rx="3" fill="#1e569f"/>
+  <!-- Windows right building -->
+  <rect x="296" y="164" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="320" y="164" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="296" y="192" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="320" y="192" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="296" y="220" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="320" y="220" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="296" y="248" width="18" height="18" rx="3" fill="#1e569f"/>
+  <rect x="320" y="248" width="18" height="18" rx="3" fill="#1e569f"/>
+  <!-- Ground line -->
+  <rect x="120" y="376" width="272" height="8" rx="4" fill="white" opacity="0.6"/>
+  <!-- BKT text -->
+  <text x="256" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="56" fill="white" letter-spacing="6">BKT</text>
+</svg>

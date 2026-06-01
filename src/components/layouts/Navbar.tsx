@@ -28,6 +28,7 @@ function Navbar(): React.ReactNode {
         <div className="flex h-16 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-2">
+            <img src="/icon.svg" alt="BKT" className="h-8 w-8 rounded-md" />
             <span className="text-primary dark:text-primary-100 text-xl font-bold tracking-tight">
               {constants.appName}
             </span>
