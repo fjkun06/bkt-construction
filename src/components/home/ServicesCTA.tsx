@@ -58,11 +58,7 @@ function ServicesCTA(): React.ReactElement {
       </div>
 
       {/* Full-width carousel */}
-      <ImageCarousel
-        slides={slides}
-        aspectRatio="aspect-16/9"
-        className="w-full shadow-2xl"
-      />
+      <ImageCarousel slides={slides} className="w-full shadow-2xl" />
 
       {/* CTA */}
       <div className="mx-auto mt-10 max-w-6xl px-4 text-center sm:px-6 lg:px-8">
