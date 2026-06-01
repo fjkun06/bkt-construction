@@ -23,7 +23,7 @@ function GalleryCard({
       transition={{ duration: 0.7, delay: index * 0.08, ease: [0.25, 0.1, 0.25, 1] }}
       className="group"
     >
-      <Link href="/realisations" className="block cursor-pointer">
+      <Link href="/services" className="block cursor-pointer">
         <div
           className={`relative ${aspect} overflow-hidden bg-gray-200 dark:bg-slate-700`}
         >

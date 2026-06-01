@@ -19,7 +19,7 @@ describe("ServicesCTA", () => {
   it.each([
     {
       name: "heading",
-      matcher: /Découvrez nos réalisations/i,
+      matcher: /Découvrez nos services/i,
       query: "getByRole" as const,
       role: "heading",
     },
@@ -36,9 +36,9 @@ describe("ServicesCTA", () => {
     }
   });
 
-  it("renders the 'Voir plus' link pointing to /realisations", () => {
+  it("renders the 'Voir plus' link pointing to /services", () => {
     const link = screen.getByRole("link", { name: /Voir plus/i });
-    expect(link).toHaveAttribute("href", "/realisations");
+    expect(link).toHaveAttribute("href", "/services");
   });
 
   it("renders ImageCarousel with all slides from constants", () => {

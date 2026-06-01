@@ -68,9 +68,9 @@ describe("GalleryCard", () => {
     expect(onError).toHaveBeenCalledWith(3);
   });
 
-  it("links to /realisations", () => {
+  it("links to /services", () => {
     renderGalleryCard();
-    expect(screen.getByRole("link")).toHaveAttribute("href", "/realisations");
+    expect(screen.getByRole("link")).toHaveAttribute("href", "/services");
   });
 
   it("does not render caption when caption is undefined", () => {
