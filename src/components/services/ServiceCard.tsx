@@ -39,19 +39,19 @@ function ServiceCard({ title, description, icon }: ServiceCardProps): React.Reac
   const Icon = iconMap[icon] ?? Compass;
 
   return (
-    <div className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-700 dark:bg-slate-800">
-      <div className="bg-primary-50 flex h-12 w-12 items-center justify-center rounded-lg dark:bg-slate-700">
+    <div className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-white p-6 transition-shadow hover:shadow-md dark:border-slate-700 dark:bg-slate-800">
+      <div className="bg-primary/10 flex h-12 w-12 items-center justify-center rounded-lg dark:bg-slate-700">
         <Icon className="text-primary h-6 w-6" />
       </div>
-      <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{title}</h3>
-      <p className="flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
+      <p className="flex-1 text-sm leading-relaxed text-gray-600 dark:text-slate-400">
         {description}
       </p>
       <Link
         href="/contact"
-        className="bg-primary-50 text-primary hover:bg-primary-100 dark:text-primary-100 mt-2 inline-flex w-max items-center rounded-md px-4 py-2 text-sm font-medium transition-colors dark:bg-slate-700 dark:hover:bg-slate-600"
+        className="text-primary dark:text-primary-100 mt-2 inline-flex w-max items-center text-sm font-semibold hover:underline"
       >
-        En savoir plus
+        En savoir plus →
       </Link>
     </div>
   );

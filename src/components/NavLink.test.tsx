@@ -34,7 +34,7 @@ describe("NavLink", () => {
     const { container } = render(<NavLink href="/services">Nos Services</NavLink>);
 
     const link = container.querySelector("a");
-    expect(link?.className).toContain("bg-primary-50");
+    expect(link?.className).toContain("text-primary");
   });
 
   it("should apply inactive classes when pathname does not match", () => {
@@ -43,7 +43,7 @@ describe("NavLink", () => {
     const { container } = render(<NavLink href="/services">Nos Services</NavLink>);
 
     const link = container.querySelector("a");
-    expect(link?.className).toContain("text-slate-700");
+    expect(link?.className).toContain("text-gray-600");
   });
 
   it("should mark home link active only for exact match", () => {
@@ -52,7 +52,7 @@ describe("NavLink", () => {
     const { container } = render(<NavLink href="/">Accueil</NavLink>);
 
     const link = container.querySelector("a");
-    expect(link?.className).toContain("text-slate-700");
+    expect(link?.className).toContain("text-gray-600");
   });
 
   it("should mark home link active on root path", () => {
@@ -61,6 +61,6 @@ describe("NavLink", () => {
     const { container } = render(<NavLink href="/">Accueil</NavLink>);
 
     const link = container.querySelector("a");
-    expect(link?.className).toContain("bg-primary-50");
+    expect(link?.className).toContain("text-primary");
   });
 });

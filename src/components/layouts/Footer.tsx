@@ -15,23 +15,21 @@ function Footer(): React.ReactElement {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-200 bg-slate-900 text-slate-300">
+    <footer className="border-primary-dark bg-primary-dark border-t text-slate-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Company info */}
           <div className="flex flex-col gap-4">
-            <span className="text-lg font-bold text-white">
-              {strings.appName}
-            </span>
+            <span className="text-lg font-bold text-white">{strings.appName}</span>
             <p className="text-sm leading-relaxed text-slate-400">
-              {strings.tagline}. Nous vous accompagnons à chaque étape de votre
-              projet de construction.
+              {strings.tagline}. Nous vous accompagnons à chaque étape de votre projet de
+              construction.
             </p>
           </div>
 
           {/* Navigation links */}
           <div className="flex flex-col gap-4">
-            <span className="text-sm font-semibold uppercase tracking-wider text-white">
+            <span className="text-sm font-semibold tracking-wider text-white uppercase">
               Navigation
             </span>
             <nav className="flex flex-col gap-2">
@@ -55,7 +53,7 @@ function Footer(): React.ReactElement {
 
           {/* Contact info */}
           <div className="flex flex-col gap-4">
-            <span className="text-sm font-semibold uppercase tracking-wider text-white">
+            <span className="text-sm font-semibold tracking-wider text-white uppercase">
               Contact
             </span>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
@@ -68,7 +66,7 @@ function Footer(): React.ReactElement {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
+        <div className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-slate-400">
           © {currentYear} {strings.appName}. {strings.copyright}
         </div>
       </div>

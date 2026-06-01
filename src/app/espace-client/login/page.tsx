@@ -15,12 +15,12 @@ export default function Login() {
       <Navbar />
       <main className="flex-1">
         <SectionWrapper className="flex min-h-[60vh] items-center justify-center py-16">
-          <div className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
             <div className="mb-6 text-center">
-              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
+              <h1 className="text-primary text-2xl font-bold dark:text-white">
                 Connexion
               </h1>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm text-gray-600 dark:text-slate-400">
                 Accédez à votre espace chantier
               </p>
             </div>
@@ -31,7 +31,7 @@ export default function Login() {
               noValidate
             >
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
                   Email
                 </label>
                 <input
@@ -46,7 +46,7 @@ export default function Login() {
                   className={`focus:border-primary focus:ring-primary rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-700 dark:text-white ${
                     errors.email
                       ? "border-red-400"
-                      : "border-slate-300 dark:border-slate-600"
+                      : "border-gray-300 dark:border-slate-600"
                   }`}
                   placeholder="votre@email.com"
                 />
@@ -56,7 +56,7 @@ export default function Login() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
                   Mot de passe
                 </label>
                 <input
@@ -67,7 +67,7 @@ export default function Login() {
                   className={`focus:border-primary focus:ring-primary rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-700 dark:text-white ${
                     errors.password
                       ? "border-red-400"
-                      : "border-slate-300 dark:border-slate-600"
+                      : "border-gray-300 dark:border-slate-600"
                   }`}
                   placeholder="••••••••"
                 />
@@ -85,7 +85,7 @@ export default function Login() {
               </button>
             </form>
 
-            <p className="mt-6 text-center text-sm text-slate-600 dark:text-slate-400">
+            <p className="mt-6 text-center text-sm text-gray-600 dark:text-slate-400">
               Pas encore de compte ?{" "}
               <Link
                 href="/espace-client/signup"

@@ -12,10 +12,10 @@ export default function Services() {
         <SectionWrapper className="py-16">
           <div className="flex flex-col items-center gap-8">
             <div className="text-center">
-              <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl dark:text-white">
+              <h1 className="text-primary text-3xl font-bold sm:text-4xl dark:text-white">
                 Nos Services
               </h1>
-              <p className="mt-3 max-w-2xl text-base text-slate-600 dark:text-slate-400">
+              <p className="mt-3 max-w-2xl text-base text-gray-600 dark:text-slate-400">
                 Une gamme complète de services pour tous vos projets de construction et de
                 travaux publics.
               </p>
@@ -30,13 +30,13 @@ export default function Services() {
         </SectionWrapper>
 
         {/* Construction Packs Section */}
-        <SectionWrapper className="border-t border-slate-200 py-16 dark:border-slate-700">
+        <SectionWrapper className="border-t border-gray-200 py-16 dark:border-slate-700">
           <div className="flex flex-col items-center gap-8">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">
+              <h2 className="text-primary text-2xl font-bold sm:text-3xl dark:text-white">
                 Nos Packs Construction
               </h2>
-              <p className="mt-3 max-w-2xl text-base text-slate-600 dark:text-slate-400">
+              <p className="mt-3 max-w-2xl text-base text-gray-600 dark:text-slate-400">
                 Choisissez le pack adapté à votre budget et vos besoins.
               </p>
             </div>

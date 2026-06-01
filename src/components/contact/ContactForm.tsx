@@ -32,14 +32,14 @@ function ContactForm(): React.ReactElement {
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4" noValidate>
       {/* Name */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+        <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
           Nom complet <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
           {...register("name", { required: "Le nom est requis" })}
           className={`focus:border-primary focus:ring-primary rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-800 dark:text-white ${
-            errors.name ? "border-red-400" : "border-slate-300 dark:border-slate-600"
+            errors.name ? "border-red-400" : "border-gray-300 dark:border-slate-600"
           }`}
           placeholder="Votre nom"
         />
@@ -50,7 +50,7 @@ function ContactForm(): React.ReactElement {
 
       {/* Email */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+        <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
           Email <span className="text-red-500">*</span>
         </label>
         <input
@@ -63,7 +63,7 @@ function ContactForm(): React.ReactElement {
             },
           })}
           className={`focus:border-primary focus:ring-primary rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-800 dark:text-white ${
-            errors.email ? "border-red-400" : "border-slate-300 dark:border-slate-600"
+            errors.email ? "border-red-400" : "border-gray-300 dark:border-slate-600"
           }`}
           placeholder="votre@email.com"
         />
@@ -74,27 +74,27 @@ function ContactForm(): React.ReactElement {
 
       {/* Phone (optional) */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+        <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
           Téléphone
         </label>
         <input
           type="tel"
           {...register("phone")}
-          className="focus:border-primary focus:ring-primary rounded-md border border-slate-300 px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:border-slate-600 dark:bg-slate-800 dark:text-white"
+          className="focus:border-primary focus:ring-primary rounded-md border border-gray-300 px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:border-slate-600 dark:bg-slate-800 dark:text-white"
           placeholder="+237 6XX XXX XXX"
         />
       </div>
 
       {/* Subject */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+        <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
           Sujet <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
           {...register("subject", { required: "Le sujet est requis" })}
           className={`focus:border-primary focus:ring-primary rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-800 dark:text-white ${
-            errors.subject ? "border-red-400" : "border-slate-300 dark:border-slate-600"
+            errors.subject ? "border-red-400" : "border-gray-300 dark:border-slate-600"
           }`}
           placeholder="Objet de votre message"
         />
@@ -105,14 +105,14 @@ function ContactForm(): React.ReactElement {
 
       {/* Message */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
+        <label className="text-sm font-medium text-gray-700 dark:text-slate-300">
           Message <span className="text-red-500">*</span>
         </label>
         <textarea
           rows={5}
           {...register("message", { required: "Le message est requis" })}
           className={`focus:border-primary focus:ring-primary resize-none rounded-md border px-4 py-2.5 text-sm transition-colors outline-none focus:ring-1 dark:bg-slate-800 dark:text-white ${
-            errors.message ? "border-red-400" : "border-slate-300 dark:border-slate-600"
+            errors.message ? "border-red-400" : "border-gray-300 dark:border-slate-600"
           }`}
           placeholder="Décrivez votre projet ou posez votre question..."
         />

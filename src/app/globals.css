@@ -2,37 +2,27 @@
 
 /*
  * BKT Construction — Color System
+ * Inspired by: hochtief.de
  *
- * Primary: Deep navy (#0f2b5b) — trust, professionalism, authority
- * Accent: Bold orange (#e85d04) — energy, action, construction
- * Neutral: Slate grays — text hierarchy, borders, surfaces
- *
- * Inspired by: Bouygues Construction, Vinci, Eiffage
+ * Primary: #1e569f (corporate blue)
+ * Dark: #143d72 (footer, dark surfaces)
+ * Light: #2d6bc2 (hover states)
+ * Text: #1a1a1a body, #4b5563 secondary
+ * Background: #ffffff primary, #f8fafc secondary
  */
 
 @theme inline {
-  /* Brand colors */
-  --color-primary: #0f2b5b;
-  --color-primary-light: #163d7a;
-  --color-primary-dark: #091e40;
-  --color-primary-50: #eef4ff;
-  --color-primary-100: #d9e5ff;
-  --color-primary-200: #b3ccff;
+  --color-primary: #1e569f;
+  --color-primary-light: #2d6bc2;
+  --color-primary-dark: #143d72;
+  --color-primary-50: #eff5ff;
+  --color-primary-100: #dae8ff;
+  --color-primary-200: #bdd6fe;
 
-  /* Accent / CTA colors */
-  --color-accent: #e85d04;
-  --color-accent-light: #f4845f;
-  --color-accent-dark: #c44902;
-  --color-accent-50: #fff7ed;
-  --color-accent-100: #ffedd5;
-
-  /* Semantic colors */
   --color-success: #059669;
-  --color-success-light: #34d399;
   --color-warning: #d97706;
   --color-error: #dc2626;
 
-  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -41,6 +31,7 @@
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
+  color: #1a1a1a;
 }
 
 @media (prefers-reduced-motion: no-preference) {

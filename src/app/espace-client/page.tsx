@@ -9,12 +9,12 @@ export default function EspaceClient() {
       <Navbar />
       <main className="flex-1">
         <SectionWrapper className="flex min-h-[60vh] items-center justify-center py-16">
-          <div className="flex w-full max-w-md flex-col items-center gap-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <div className="flex w-full max-w-md flex-col items-center gap-6 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
             <div className="text-center">
-              <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
+              <h1 className="text-primary text-2xl font-bold dark:text-white">
                 Espace Client
               </h1>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm text-gray-600 dark:text-slate-400">
                 Accédez à votre espace chantier pour suivre votre projet.
               </p>
             </div>
@@ -28,7 +28,7 @@ export default function EspaceClient() {
               </Link>
               <Link
                 href="/espace-client/signup"
-                className="flex w-full items-center justify-center rounded-md border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700"
+                className="flex w-full items-center justify-center rounded-md border border-gray-300 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700"
               >
                 Créer un compte
               </Link>
