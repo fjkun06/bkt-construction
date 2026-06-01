@@ -12,7 +12,7 @@ function GalleryCard({
   slide,
   index,
   aspect,
-  failedImages,
+  hasFailed,
   onError,
 }: GalleryCardProps): React.ReactElement {
   return (
@@ -26,7 +26,7 @@ function GalleryCard({
       <Link href="/realisations" className="block cursor-pointer">
         <div className={`relative ${aspect} overflow-hidden bg-gray-200`}>
           <Image
-            src={failedImages.has(index) ? FALLBACK_IMAGE : slide.src}
+            src={hasFailed ? FALLBACK_IMAGE : slide.src}
             alt={slide.alt}
             fill
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"

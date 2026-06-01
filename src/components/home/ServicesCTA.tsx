@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import ImageCarousel from "@/components/ImageCarousel";
+import ImageCarousel from "@/components/gallery/ImageCarousel";
 import { slides } from "@/utils/constants";
 
 function ServicesCTA(): React.ReactElement {

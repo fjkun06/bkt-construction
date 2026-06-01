@@ -13,6 +13,6 @@ export interface GalleryCardProps {
   slide: Slide;
   index: number;
   aspect: string;
-  failedImages: Set<number>;
+  hasFailed: boolean;
   onError: (i: number) => void;
 }
