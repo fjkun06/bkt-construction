@@ -16,16 +16,16 @@ function PlatformDescription(): React.ReactElement {
     <section className="bg-white py-20 dark:bg-slate-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-10 text-center">
-          <h2 className="text-primary text-[40px] font-bold dark:text-white">
+          <h2 className="text-primary text-[28px] font-bold sm:text-[36px] lg:text-[40px] dark:text-white">
             Une expertise complète en construction
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg dark:text-slate-400">
+          <p className="max-w-3xl text-base leading-relaxed text-gray-600 lg:text-lg dark:text-slate-400">
             BKT Construction est une entreprise de Bâtiment et Travaux Publics offrant des
             services complets allant de la conception à la livraison. Nous intervenons
             dans tous les secteurs de la construction avec professionnalisme et rigueur.
           </p>
 
-          <div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-4">
+          <div className="grid w-full grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-4">
             {constants.cards.map((card) => (
               <ImageCard key={card.title} card={card} />
             ))}

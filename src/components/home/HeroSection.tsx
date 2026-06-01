@@ -33,7 +33,7 @@ function HeroSection(): React.ReactElement {
       />
       <div className="absolute inset-0 bg-[#024a6a]/70" />
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
-        <h1 className="text-[40px] leading-tight font-bold tracking-tight">
+        <h1 className="text-[28px] leading-tight font-bold tracking-tight sm:text-[36px] lg:text-[40px]">
           {constants.appName}
           <span className="mt-4 block text-lg font-normal text-white/80 sm:text-xl">
             {constants.tagline}

@@ -43,7 +43,7 @@ export default function Dashboard() {
                 <HardHat className="text-primary h-6 w-6" />
               </div>
               <div>
-                <h1 className="text-primary text-[40px] font-bold dark:text-white">
+                <h1 className="text-primary text-[28px] font-bold sm:text-[36px] lg:text-[40px] dark:text-white">
                   Mon Chantier
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-slate-400">

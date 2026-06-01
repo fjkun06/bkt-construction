@@ -19,7 +19,7 @@ function ImageCard({ card }: ImageCardProps): React.ReactElement {
   return (
     <Link
       href={card.href}
-      className="group relative flex h-80 flex-col justify-end overflow-hidden rounded-lg p-6 text-white sm:h-96"
+      className="group relative flex h-60 flex-col justify-end overflow-hidden rounded-lg p-6 text-white lg:h-96"
     >
       <Image
         alt={card.title}
