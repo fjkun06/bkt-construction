@@ -9,8 +9,6 @@ import strings from "@/utils/strings";
 /**
  * Footer
  *
- * Site-wide footer component displaying company info, navigation links,
- * contact details, and copyright notice.
  * Features a decorative geometric SVG background inspired by Hochtief.
  */
 function Footer(): React.ReactElement {
@@ -28,7 +26,7 @@ function Footer(): React.ReactElement {
               construction.
             </p>
 
-            <div className="mt-8 flex gap-4 border-t border-[#CCD1D5]/40 pt-5 pr-3 text-[17px] text-[#CCD1D5]">
+            <div className="mt-8 flex gap-4 border-t border-[#CCD1D5]/40 pt-5 pr-3 text-xs text-[#CCD1D5]">
               <Link href="#" className="transition-colors hover:text-white">
                 Mentions légales
               </Link>

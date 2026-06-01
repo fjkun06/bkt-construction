@@ -3,14 +3,6 @@ import { render } from "@testing-library/react";
 
 import NavLink from "./NavLink";
 
-jest.mock("next/link", () => {
-  return ({ children, href, className, onClick }: any) => (
-    <a href={href} className={className} onClick={onClick}>
-      {children}
-    </a>
-  );
-});
-
 jest.mock("next/navigation", () => ({
   usePathname: jest.fn(),
 }));

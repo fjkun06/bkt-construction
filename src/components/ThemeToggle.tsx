@@ -4,10 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 
-interface ThemeToggleProps {
-  showLabel?: boolean;
-  className?: string;
-}
+import { ThemeToggleProps } from "@/interfaces/theme-toggle.interface";
 
 /**
  * ThemeToggle

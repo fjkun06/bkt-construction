@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 import constants from "@/utils/constants";
-import NavLink from "../NavLink";
-import ThemeToggle from "../ThemeToggle";
 import useNavbarController from "./Navbar.controller";
+import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
 
 /**
  * Navbar
@@ -16,8 +16,7 @@ import useNavbarController from "./Navbar.controller";
  * Includes the company brand, navigation links, and a mobile menu toggle.
  */
 function Navbar(): React.ReactNode {
-  const { isMobileOpen, toggleMobileOpen, closeMobileMenu, navRef } =
-    useNavbarController();
+  const { isMobileOpen, toggleMobileOpen, navRef } = useNavbarController();
 
   return (
     <header
@@ -34,26 +33,12 @@ function Navbar(): React.ReactNode {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-0 lg:flex">
-            {constants.navItems.map((item) => (
-              <NavLink key={item.name} href={item.href}>
-                {item.name}
-              </NavLink>
-            ))}
-            <ThemeToggle />
-            <Link
-              href="/espace-client"
-              className="bg-primary hover:bg-primary-dark ml-4 rounded px-5 py-2 text-[17px] font-semibold text-white transition-colors"
-            >
-              Espace Client
-            </Link>
-          </nav>
+          <DesktopNavbar navItems={constants.navItems} />
 
           {/* Mobile menu button */}
           <button
             onClick={toggleMobileOpen}
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 transition hover:bg-gray-100 lg:hidden dark:text-slate-300 dark:hover:bg-slate-800"
+            className="hover:text-primary dark:hover:text-primary-100 inline-flex cursor-pointer items-center justify-center rounded-md p-2 text-gray-700 transition lg:hidden dark:text-slate-300"
             aria-expanded={isMobileOpen}
             aria-label={isMobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
           >
@@ -62,33 +47,11 @@ function Navbar(): React.ReactNode {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <div
-        className={`transform overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${
-          isMobileOpen ? "max-h-96" : "max-h-0"
-        }`}
-      >
-        <nav className="space-y-1 border-t border-gray-200 px-4 py-4 dark:border-slate-800">
-          {constants.navItems.map((item) => (
-            <NavLink
-              key={item.name}
-              href={item.href}
-              className="block px-3 py-2 text-[17px] font-medium"
-              onClick={toggleMobileOpen}
-            >
-              {item.name}
-            </NavLink>
-          ))}
-          <ThemeToggle showLabel className="mt-2 px-3" />
-          <Link
-            href="/espace-client"
-            className="bg-primary hover:bg-primary-dark mt-2 block rounded px-3 py-2 text-center text-[17px] font-semibold text-white transition-colors"
-            onClick={toggleMobileOpen}
-          >
-            Espace Client
-          </Link>
-        </nav>
-      </div>
+      <MobileNavbar
+        navItems={constants.navItems}
+        isMobileOpen={isMobileOpen}
+        toggleMobileOpen={toggleMobileOpen}
+      />
     </header>
   );
 }

@@ -6,3 +6,4 @@ export * from "./providers";
 export * from "./wrappers";
 
 export { default as NavLink } from "./NavLink";
+export { default as ThemeToggle } from "./ThemeToggle";

@@ -34,14 +34,27 @@ export type NavLinkProps = {
 };
 
 /**
- * NavbarProps
- * Props for the Navbar component and its children.
- * @property isMobileOpen - Whether the mobile menu is currently open
- * @property toggleMobileOpen - Function to toggle mobile menu state
+ * BaseNavbarProps
+ * Common props shared by DesktopNavbar and MobileNavbar.
  * @property navItems - Array of navigation items to display
  */
-export type NavbarProps = {
+export type BaseNavbarProps = {
+  navItems: NavItem[];
+};
+
+/**
+ * DesktopNavbarProps
+ * Props for the DesktopNavbar component.
+ */
+export type DesktopNavbarProps = BaseNavbarProps;
+
+/**
+ * MobileNavbarProps
+ * Props for the MobileNavbar component.
+ * @property isMobileOpen - Whether the mobile menu is currently open
+ * @property toggleMobileOpen - Function to toggle mobile menu state
+ */
+export type MobileNavbarProps = BaseNavbarProps & {
   isMobileOpen: boolean;
   toggleMobileOpen: () => void;
-  navItems: NavItem[];
 };

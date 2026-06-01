@@ -1,6 +1,8 @@
 "use client";
 import { useState, useRef } from "react";
 
+import useClickOutside from "@/hooks/useClickOutside";
+
 /**
  * useNavbarController
  *
@@ -14,6 +16,8 @@ const useNavbarController = () => {
 
   const toggleMobileOpen = () => setIsMobileOpen((prev) => !prev);
   const closeMobileMenu = () => setIsMobileOpen(false);
+
+  useClickOutside(navRef, closeMobileMenu, isMobileOpen);
 
   return {
     isMobileOpen,
