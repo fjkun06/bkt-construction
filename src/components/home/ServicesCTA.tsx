@@ -8,12 +8,12 @@ import ImageCarousel from "@/components/ImageCarousel";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
     alt: "Chantier de construction avec grue",
     caption: "Construction de bâtiments",
   },
   {
-    src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1581094794329-cd0e5ad2b48d?q=80&w=800&auto=format&fit=crop",
     alt: "Route en construction",
     caption: "Travaux publics et infrastructures",
   },
@@ -23,12 +23,12 @@ const slides = [
     caption: "Projets résidentiels",
   },
   {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop",
     alt: "Immeuble commercial",
     caption: "Construction commerciale",
   },
   {
-    src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=800&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1504917595218-6f1f8e0a7c5d?q=80&w=800&auto=format&fit=crop",
     alt: "Usine industrielle",
     caption: "Construction industrielle",
   },
@@ -51,20 +51,22 @@ function ServicesCTA(): React.ReactElement {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-120px" }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-4"
+            className="flex flex-col justify-between border-l border-gray-400 pl-5 lg:col-span-4"
           >
-            <h2 className="text-[28px] leading-tight font-bold text-gray-900 sm:text-[36px] lg:text-[40px]">
-              Découvrez nos
-              <br />
-              réalisations
-            </h2>
-            <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-gray-600">
-              De l&apos;étude de faisabilité à la livraison clé en main, nous proposons
-              une gamme complète de services adaptés à vos besoins.
-            </p>
+            <div>
+              <h2 className="text-primary text-[28px] leading-tight font-bold sm:text-[36px] lg:text-[40px]">
+                Découvrez nos
+                <br />
+                réalisations
+              </h2>
+              <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-gray-600">
+                De l&apos;étude de faisabilité à la livraison clé en main, nous proposons
+                une gamme complète de services adaptés à vos besoins.
+              </p>
+            </div>
             <Link
               href="/realisations"
-              className="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-md border border-gray-900 px-6 py-2.5 text-[13px] font-semibold tracking-wider text-gray-900 uppercase transition-colors hover:bg-gray-900 hover:text-white"
+              className="border-primary text-primary hover:bg-primary mt-10 inline-flex cursor-pointer items-center gap-2 rounded-md border px-6 py-2.5 text-[13px] font-semibold tracking-wider uppercase transition-colors hover:text-white lg:mt-0"
             >
               Voir plus
             </Link>

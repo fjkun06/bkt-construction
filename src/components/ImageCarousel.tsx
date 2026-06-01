@@ -55,14 +55,14 @@ function GalleryCard({
         {slide.caption && (
           <div className="mt-3 flex items-start justify-between gap-2">
             <div>
-              <p className="text-[15px] font-semibold text-gray-900">{slide.caption}</p>
+              <p className="text-primary text-[15px] font-semibold">{slide.caption}</p>
               <p className="mt-1 text-[13px] text-gray-500">
                 Expertise et savoir-faire dans tous les corps d&apos;état
               </p>
             </div>
             <ArrowUpRight
               size={16}
-              className="mt-1 shrink-0 text-gray-400 transition-colors group-hover:text-gray-900"
+              className="group-hover:text-primary mt-1 shrink-0 text-gray-400 transition-colors"
             />
           </div>
         )}
@@ -84,7 +84,7 @@ function ImageCarousel({
 
   return (
     <div
-      className={`grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-12 lg:gap-6 ${className}`}
+      className={`grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-12 lg:gap-6 ${className}`}
     >
       {/* Left: 2 medium images */}
       <div className="flex flex-col gap-6 md:col-span-1 lg:col-span-5 lg:gap-6">
@@ -104,7 +104,7 @@ function ImageCarousel({
         />
       </div>
 
-      {/* Right: 1 tall + 1 medium */}
+      {/* Middle: 1 tall + 1 medium */}
       <div className="flex flex-col gap-6 md:col-span-1 lg:col-span-4 lg:gap-6">
         <GalleryCard
           slide={slides[2]}
@@ -122,8 +122,8 @@ function ImageCarousel({
         />
       </div>
 
-      {/* Far right: 2 stacked */}
-      <div className="flex flex-col gap-6 md:col-span-2 lg:col-span-3 lg:gap-6">
+      {/* Right: 2 stacked */}
+      <div className="flex flex-col gap-6 md:col-span-1 lg:col-span-3 lg:gap-6">
         <GalleryCard
           slide={slides[4]}
           index={4}
