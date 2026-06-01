@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex flex-col gap-12">
           {/* Page header */}
           <div className="text-center">
-            <h1 className="text-primary text-3xl font-bold sm:text-4xl dark:text-white">
+            <h1 className="text-primary text-[28px] font-bold sm:text-[36px] lg:text-[40px] dark:text-white">
               Contactez-nous
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-base text-gray-600 dark:text-slate-400">
@@ -41,7 +41,7 @@ export default function Contact() {
           {/* Form + Payment methods */}
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             <div className="flex flex-col gap-4">
-              <h2 className="text-primary text-xl font-semibold dark:text-white">
+              <h2 className="text-primary text-[28px] font-semibold sm:text-[36px] lg:text-[40px] dark:text-white">
                 Envoyez-nous un message
               </h2>
               <ContactForm />

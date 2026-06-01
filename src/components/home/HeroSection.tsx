@@ -1,8 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 
-import constants from "@/utils/constants";
+import constants, { images } from "@/utils/constants";
 
 /**
  * HeroSection
@@ -11,10 +13,22 @@ import constants from "@/utils/constants";
  * Features the main heading, description, and two CTA buttons.
  */
 function HeroSection(): React.ReactElement {
+  const [src, setSrc] = useState<string>(images.hero);
+
   return (
-    <section className="bg-primary relative flex min-h-140 items-center justify-center px-4 py-20 text-white">
-      <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
-        <h1 className="text-4xl leading-tight font-bold tracking-tight sm:text-5xl lg:text-6xl">
+    <section className="relative flex min-h-140 items-center justify-center overflow-hidden px-4 py-20 text-white">
+      <Image
+        alt="Construction background"
+        className="absolute inset-0 object-cover object-center"
+        fill
+        priority
+        sizes="100vw"
+        src={src}
+        onError={() => setSrc(images.heroFallback)}
+      />
+      <div className="absolute inset-0 bg-slate-950/70" />
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
+        <h1 className="text-[28px] leading-tight font-bold tracking-tight sm:text-[36px] lg:text-[40px]">
           {constants.appName}
           <span className="mt-4 block text-lg font-normal text-white/80 sm:text-xl">
             {constants.tagline}

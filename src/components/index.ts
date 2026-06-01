@@ -1,3 +1,4 @@
+export * from "./cards";
 export * from "./home";
 export * from "./services";
 export * from "./contact";
@@ -7,3 +8,4 @@ export * from "./wrappers";
 
 export { default as NavLink } from "./NavLink";
 export { default as ThemeToggle } from "./ThemeToggle";
+export * from "./gallery";

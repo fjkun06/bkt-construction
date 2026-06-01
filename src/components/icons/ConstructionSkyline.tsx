@@ -1,21 +1,47 @@
+"use client";
+
 import React from "react";
+
+import { useConstructionSkyline } from "./useConstructionSkyline";
 
 /**
  * Construction skyline SVG — line-art illustration of cranes,
  * steel-frame building, and construction equipment.
+ *
+ * Animates continuously with a staggered stroke-drawing effect:
+ * each path slowly draws on, then erases, in an infinite loop.
  */
 function ConstructionSkyline(): React.ReactElement {
+  const ref = useConstructionSkyline();
+
   return (
     <svg
-      className="pointer-events-none w-full h-30 sm:h-45 md:h-55 lg:h-65 ml-3 md:ml-5 xl:ml-15 2xl:ml-50"
+      ref={ref}
+      className="pointer-events-none ml-3 h-30 w-full sm:h-45 md:ml-5 md:h-55 lg:h-65 xl:ml-15 2xl:ml-50"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 280"
       preserveAspectRatio="xMidYMax meet"
       aria-hidden="true"
     >
+      <style>{`
+        @keyframes draw {
+          0%, 100% {
+            stroke-dashoffset: var(--length);
+          }
+          30.77% {
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dashoffset: 0;
+          }
+          80.77% {
+            stroke-dashoffset: var(--length);
+          }
+        }
+      `}</style>
       <g
         opacity="0.45"
-        stroke="white"
+        stroke="currentColor"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
