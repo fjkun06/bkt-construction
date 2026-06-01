@@ -26,7 +26,7 @@ function HeroSection(): React.ReactElement {
         src={src}
         onError={() => setSrc(images.heroFallback)}
       />
-      <div className="absolute inset-0 bg-[#024a6a]/70" />
+      <div className="absolute inset-0 bg-slate-950/70" />
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
         <h1 className="text-[28px] leading-tight font-bold tracking-tight sm:text-[36px] lg:text-[40px]">
           {constants.appName}

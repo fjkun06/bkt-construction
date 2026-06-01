@@ -24,7 +24,9 @@ function GalleryCard({
       className="group"
     >
       <Link href="/realisations" className="block cursor-pointer">
-        <div className={`relative ${aspect} overflow-hidden bg-gray-200`}>
+        <div
+          className={`relative ${aspect} overflow-hidden bg-gray-200 dark:bg-slate-700`}
+        >
           <Image
             src={hasFailed ? FALLBACK_IMAGE : slide.src}
             alt={slide.alt}
@@ -37,14 +39,14 @@ function GalleryCard({
         {slide.caption && (
           <div className="mt-3 flex items-start justify-between gap-2">
             <div>
-              <p className="text-primary text-[15px] font-semibold">{slide.caption}</p>
-              <p className="mt-1 text-[13px] text-gray-500">
+              <p className="text-primary dark:text-primary-100 text-[15px] font-semibold">{slide.caption}</p>
+              <p className="mt-1 text-[13px] text-gray-500 dark:text-slate-400">
                 Expertise et savoir-faire dans tous les corps d&apos;état
               </p>
             </div>
             <ArrowUpRight
               size={16}
-              className="group-hover:text-primary mt-1 shrink-0 text-gray-400 transition-colors"
+              className="group-hover:text-primary mt-1 shrink-0 text-gray-400 transition-colors dark:text-slate-500"
             />
           </div>
         )}

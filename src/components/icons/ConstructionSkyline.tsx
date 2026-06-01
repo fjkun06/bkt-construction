@@ -7,7 +7,7 @@ import React from "react";
 function ConstructionSkyline(): React.ReactElement {
   return (
     <svg
-      className="pointer-events-none w-full h-30 sm:h-45 md:h-55 lg:h-65 ml-3 md:ml-5 xl:ml-15 2xl:ml-50"
+      className="pointer-events-none ml-3 h-30 w-full sm:h-45 md:ml-5 md:h-55 lg:h-65 xl:ml-15 2xl:ml-50"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 280"
       preserveAspectRatio="xMidYMax meet"
@@ -15,7 +15,7 @@ function ConstructionSkyline(): React.ReactElement {
     >
       <g
         opacity="0.45"
-        stroke="white"
+        stroke="currentColor"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
