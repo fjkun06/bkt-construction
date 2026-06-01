@@ -10,29 +10,34 @@ jest.mock("@/components/cards", () => ({
   ),
 }));
 
+function renderPlatformDescription() {
+  render(<PlatformDescription />);
+}
+
 describe("PlatformDescription", () => {
-  it("renders the section heading", () => {
-    render(<PlatformDescription />);
-
-    expect(
-      screen.getByRole("heading", { name: /Une expertise complète en construction/ }),
-    ).toBeInTheDocument();
-  });
-
-  it("renders the description paragraph", () => {
-    render(<PlatformDescription />);
-
-    expect(
-      screen.getByText(/BKT Construction est une entreprise de Bâtiment et Travaux Publics/),
-    ).toBeInTheDocument();
+  it.each([
+    {
+      name: "section heading",
+      matcher: /Une expertise complète en construction/,
+      get: () =>
+        screen.getByRole("heading", { name: /Une expertise complète en construction/ }),
+    },
+    {
+      name: "description paragraph",
+      matcher: /BKT Construction est une entreprise de Bâtiment et Travaux Publics/,
+      get: () =>
+        screen.getByText(
+          /BKT Construction est une entreprise de Bâtiment et Travaux Publics/,
+        ),
+    },
+  ])("renders the $name", ({ get }) => {
+    renderPlatformDescription();
+    expect(get()).toBeInTheDocument();
   });
 
   it("renders an ImageCard for each card in constants.cards", () => {
-    render(<PlatformDescription />);
-
-    const cards = screen.getAllByTestId("image-card");
-    expect(cards).toHaveLength(constants.cards.length);
-
+    renderPlatformDescription();
+    expect(screen.getAllByTestId("image-card")).toHaveLength(constants.cards.length);
     constants.cards.forEach((card) => {
       expect(screen.getByText(card.title)).toBeInTheDocument();
     });
