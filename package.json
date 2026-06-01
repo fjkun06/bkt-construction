@@ -9,9 +9,7 @@
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "commit": "cz",
-    "prepare": "husky"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
@@ -23,8 +21,6 @@
     "react-hook-form": "^7.56.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -32,34 +28,16 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
-    "husky": "^9.1.7",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
-    "lint-staged": "^15.5.1",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.11",
     "typescript": "^5"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,css,md}": [
-      "prettier --write"
-    ]
   }
 }
