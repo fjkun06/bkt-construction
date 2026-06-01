@@ -21,7 +21,7 @@ function NavLink({ href, children, className, onClick }: NavLinkProps): React.Re
   const pathname = usePathname();
   const isActive = pathname === href || (href !== "/" && pathname.startsWith(href));
 
-  const baseClasses = "relative px-4 py-2 text-sm font-medium transition-colors";
+  const baseClasses = "relative px-4 py-2 text-[17px] font-medium transition-colors";
   const activeClasses =
     "text-primary after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:bg-primary dark:text-primary-100 dark:after:bg-primary-100";
   const inactiveClasses =

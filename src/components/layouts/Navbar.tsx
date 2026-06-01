@@ -44,7 +44,7 @@ function Navbar(): React.ReactNode {
             <ThemeToggle />
             <Link
               href="/espace-client"
-              className="bg-primary hover:bg-primary-dark ml-4 rounded px-5 py-2 text-sm font-semibold text-white transition-colors"
+              className="bg-primary hover:bg-primary-dark ml-4 rounded px-5 py-2 text-[17px] font-semibold text-white transition-colors"
             >
               Espace Client
             </Link>
@@ -73,7 +73,7 @@ function Navbar(): React.ReactNode {
             <NavLink
               key={item.name}
               href={item.href}
-              className="block px-3 py-2 text-base font-medium"
+              className="block px-3 py-2 text-[17px] font-medium"
               onClick={toggleMobileOpen}
             >
               {item.name}
@@ -82,7 +82,7 @@ function Navbar(): React.ReactNode {
           <ThemeToggle showLabel className="mt-2 px-3" />
           <Link
             href="/espace-client"
-            className="bg-primary hover:bg-primary-dark mt-2 block rounded px-3 py-2 text-center text-sm font-semibold text-white transition-colors"
+            className="bg-primary hover:bg-primary-dark mt-2 block rounded px-3 py-2 text-center text-[17px] font-semibold text-white transition-colors"
             onClick={toggleMobileOpen}
           >
             Espace Client

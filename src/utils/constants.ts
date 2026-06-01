@@ -66,6 +66,14 @@ const constants = {
     },
   ],
 
+  footerServices: [
+    "Études et Ingénierie",
+    "Construction de Bâtiments",
+    "Travaux Publics",
+    "Rénovation",
+    "Clé en Main",
+  ],
+
   packs: [
     {
       name: "Étude & Plans",
@@ -84,19 +92,8 @@ const constants = {
       name: "Gros Œuvre",
       description: "Structure uniquement",
       target: "Clients avec budget limité",
-      included: [
-        "Terrassement",
-        "Fondations",
-        "Murs",
-        "Dalles",
-        "Toiture",
-      ],
-      excluded: [
-        "Finitions intérieures",
-        "Électricité",
-        "Plomberie",
-        "Peinture",
-      ],
+      included: ["Terrassement", "Fondations", "Murs", "Dalles", "Toiture"],
+      excluded: ["Finitions intérieures", "Électricité", "Plomberie", "Peinture"],
     },
     {
       name: "Semi-Fini",
@@ -121,12 +118,7 @@ const constants = {
         "Menuiserie",
         "Cloisons intérieures",
       ],
-      excluded: [
-        "Peinture",
-        "Carrelage",
-        "Sanitaires",
-        "Cuisine",
-      ],
+      excluded: ["Peinture", "Carrelage", "Sanitaires", "Cuisine"],
     },
     {
       name: "Clé en Main",
