@@ -17,7 +17,7 @@ function ConstructionSkyline(): React.ReactElement {
   return (
     <svg
       ref={ref}
-      className="pointer-events-none ml-3 h-30 w-full sm:h-45 md:ml-5 md:h-55 lg:h-65 xl:ml-15 2xl:ml-50"
+      className="pointer-events-none ml-3 h-30 w-full text-slate-700 sm:h-45 md:ml-5 md:h-55 lg:h-65 xl:ml-15 2xl:ml-50"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 280"
       preserveAspectRatio="xMidYMax meet"
