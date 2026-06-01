@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * BKT Construction — Color System
+ *
+ * Primary: Deep navy (#0f2b5b) — trust, professionalism, authority
+ * Accent: Bold orange (#e85d04) — energy, action, construction
+ * Neutral: Slate grays — text hierarchy, borders, surfaces
+ *
+ * Inspired by: Bouygues Construction, Vinci, Eiffage
+ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Brand colors */
+  --color-primary: #0f2b5b;
+  --color-primary-light: #163d7a;
+  --color-primary-dark: #091e40;
+  --color-primary-50: #eef4ff;
+  --color-primary-100: #d9e5ff;
+  --color-primary-200: #b3ccff;
+
+  /* Accent / CTA colors */
+  --color-accent: #e85d04;
+  --color-accent-light: #f4845f;
+  --color-accent-dark: #c44902;
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+
+  /* Semantic colors */
+  --color-success: #059669;
+  --color-success-light: #34d399;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
