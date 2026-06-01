@@ -5,48 +5,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import ImageCarousel from "@/components/ImageCarousel";
-import { images } from "@/utils/constants";
-
-const slides = [
-  {
-    src: images.gallery.building,
-    alt: "Chantier de construction avec grue",
-    caption: "Construction de bâtiments",
-  },
-  {
-    src: images.gallery.road,
-    alt: "Route en construction",
-    caption: "Travaux publics et infrastructures",
-  },
-  {
-    src: images.gallery.residential,
-    alt: "Villa résidentielle moderne",
-    caption: "Projets résidentiels",
-  },
-  {
-    src: images.gallery.commercial,
-    alt: "Immeuble commercial",
-    caption: "Construction commerciale",
-  },
-  {
-    src: images.gallery.industrial,
-    alt: "Usine industrielle",
-    caption: "Construction industrielle",
-  },
-  {
-    src: images.gallery.public,
-    alt: "École et bâtiment public",
-    caption: "Bâtiments publics",
-  },
-];
+import { slides } from "@/utils/constants";
 
 function ServicesCTA(): React.ReactElement {
   return (
     <section className="bg-stone-200 py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header row: text left, gallery right */}
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
-          {/* Left text block */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

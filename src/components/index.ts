@@ -8,4 +8,5 @@ export * from "./wrappers";
 
 export { default as NavLink } from "./NavLink";
 export { default as ThemeToggle } from "./ThemeToggle";
+export { default as GalleryCard } from "./GalleryCard";
 export { default as ImageCarousel } from "./ImageCarousel";

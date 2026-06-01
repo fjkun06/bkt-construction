@@ -37,6 +37,39 @@ export const images = {
 
 export const FALLBACK_IMAGE = images.heroFallback;
 
+export const slides = [
+  {
+    src: images.gallery.building,
+    alt: "Chantier de construction avec grue",
+    caption: "Construction de bâtiments",
+  },
+  {
+    src: images.gallery.road,
+    alt: "Route en construction",
+    caption: "Travaux publics et infrastructures",
+  },
+  {
+    src: images.gallery.residential,
+    alt: "Villa résidentielle moderne",
+    caption: "Projets résidentiels",
+  },
+  {
+    src: images.gallery.commercial,
+    alt: "Immeuble commercial",
+    caption: "Construction commerciale",
+  },
+  {
+    src: images.gallery.industrial,
+    alt: "Usine industrielle",
+    caption: "Construction industrielle",
+  },
+  {
+    src: images.gallery.public,
+    alt: "École et bâtiment public",
+    caption: "Bâtiments publics",
+  },
+];
+
 const constants = {
   appName: "BKT Construction",
   tagline: "Entreprise de Bâtiment et Travaux Publics",
